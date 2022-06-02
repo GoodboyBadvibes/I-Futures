@@ -457,7 +457,7 @@ padding: 50px;
     width: 100%;
   } 
   #diveIn h1{
-    font-size: 40px;
+    font-size: 35px;
   } 
   #intro img{
     width: 50%;
@@ -469,14 +469,22 @@ padding: 50px;
     display: none;
   }
   #navSection{
-    display: inline;
+    /* display: inline; */
+    flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
+
+  .navItems{
+    gap: 40px;
+  }
+
+
   .logo a{
     font-size:200%;
     font-weight: 700;
     text-align: center;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     line-height: 120% ;
   }
   .eachCustomer{
@@ -495,4 +503,11 @@ padding: 50px;
   width: 100%;
   margin: 50px auto;
   } 
+  .signUp{
+    padding:20px 60px ;
+  }
+  .aboutAPP{
+    padding:20px 60px;
+  }
  }
+gi
