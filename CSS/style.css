@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* global styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* nav styles */
+
+#navSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+#navSection a{
+  color: #1f1f61;
+  text-decoration: none;
+}
+
+.logo a{
+  font-size: 130%;
+  font-weight: 700;
+}
+.navItems{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  list-style: none;
+}
+.introText{
+  color: white;
+  margin-left: 100;
+  /* text-align: center; */
+}
+.introText >h1{
+  font-size: 450%;
+  margin-bottom: -30px;
+}
+.introText >h2{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.moreInfo {
+ border: 1px solid white;
+ padding: 10px 30px;
+ margin-right: 80%;
+ margin-top: 10px;
+ text-decoration: none;
+ text-align: center;
+} 
+.introText a{
+  color: white;
+}
+#intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 70px 13%;
+  background-color: rgb(31, 31, 97) ;
+  
+}
+#intro img{
+  width: 50%;
+  height: 50%;
+}
+#about{
+  background-color: rgb(221, 243, 252);
+  padding: 5px 100px;
+}
+.aboutSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 40px;
+  width: 70%;
+  margin: 50px auto;
+  background-color: white;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+}
+.aboutSection img{
+  width: 40%;
+}
+.aboutText h1{
+  margin-bottom: 6%;
+  font-size: 30px;
+  color: #1f42c3;
+
+}
+.aboutText p{
+  margin-bottom: 40px;
+}
+.readMore{
+ background-color : #1f42c3;
+ color: white;
+ border-radius: 30px;
+ padding: 10px 30px;
+ margin-right: 80%;
+ margin-top: 10px;
+ text-align: center;
+}
+#diveIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#diveIn h1{
+  font-size: 70px;
+}
+/* .diveIn p{
+  font-size: 20px;
+} */
+.signUp{
+  background-color: #1f42c3;
+  width: 100%;
+  padding: 120px;
+}
+.aboutAPP{
+  background-color: #f53978;
+  width: 100%;
+  padding: 120px;
+}
+.moreInfo2{
+  background-color:#b3c1f3;
+  /* width: 30%; */
+  margin: 50px auto;
+  border-radius: 30px;
+  color: #3a1bc4;
+  font-size: 15px;
+  padding: 20px;
+  width: 25%;
+  box-shadow: 5px 3px 9px black;
+}
+.contactUs{
+  background-color:#e3a1c3;
+  /* width: 30%; */
+  margin: 50px auto;
+  border-radius: 30px;
+  color: #d0298d;
+  font-size: 15px;
+  padding: 20px;
+  width: 25%;
+  box-shadow: 5px 3px 9px black;
+}
+#diveIn a{
+  text-decoration: none;
+  font-weight: 700;
+}
+#customerSection{
+  font-size: 125%;
+  background-color:rgb(221, 243, 252) ; 
+  gap: 20px;
+  padding-bottom: 20px;
+}
+#customerSection h1{
+  text-align: center;
+  color: blue;
+  padding: 30px;
+}
+#customerSection h2{
+  font-size: 120%;
+}
+#customerSection p{
+  font-size: 80%;
+}
+.customerRole{
+  color: rgb(221, 205, 205);
+  font-size: 75%;
+}
+.eachCustomer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  margin: 10px auto;
+}
+.speCustomer{
+background-color: white;
+border-radius: 20px;
+padding: 50px;
+}
+#finalSection{
+  text-align: center;
+  font-size: 100%;
+  font-weight: 400;
+  padding: 10px 70px;
+  background-color: #333;
+  color: white;
+}
+.sampleText{
+  margin-bottom: 40px;
+  width: 37%;
+  margin: 50px auto;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(6, 13, 95); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-weight: 800;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/* media query */
+@media screen and (max-width: 2407px){
+  .moreInfo {
+    margin-right: 79%;
+   } 
+}
+@media screen  and (max-width: 2307px) {
+  .moreInfo {
+    margin-right: 78%;
+   } 
+   .readMore{
+    margin-right: 79%;
+   }
+}
+@media screen  and (max-width: 2232px) {
+  .moreInfo {
+    margin-right: 77%;
+   } 
+   .readMore{
+    margin-right: 78%;
+   }
+}
+@media screen  and (max-width: 2132px) {
+  .moreInfo {
+    margin-right: 76%;
+   } 
+   .readMore{
+    margin-right: 77%;
+   }
+}
+@media screen  and (max-width: 2217px) {
+  .moreInfo {
+    margin-right: 75%;
+   } 
+   .readMore{
+    margin-right: 76%;
+   }
+}
+@media screen  and (max-width: 1997px) {
+  .moreInfo {
+    margin-right: 74%;
+   } 
+   .readMore{
+    margin-right: 75%;
+   }
+}
+@media screen  and (max-width: 1937px) {
+  .moreInfo {
+    margin-right: 73%;
+   } 
+   .readMore{
+    margin-right: 74%;
+   }
+}
+@media screen  and (max-width: 1872px) {
+  .moreInfo {
+    margin-right: 72%;
+   } 
+   .readMore{
+    margin-right: 73%;
+   }
+}@media screen  and (max-width: 1827px) {
+  .moreInfo {
+    margin-right: 71%;
+   } 
+   .readMore{
+    margin-right: 72%;
+   }
+}
+@media screen  and (max-width: 1772px) {
+  .moreInfo {
+    margin-right: 70%;
+   } 
+   .readMore{
+    margin-right: 71%;
+   }
+}
+@media screen  and (max-width: 1727px) {
+  .moreInfo {
+    margin-right: 69%;
+   } 
+   .readMore{
+    margin-right: 70%;
+   }
+}
+@media screen  and (max-width: 1682px) {
+  .moreInfo {
+    margin-right: 68%;
+   } 
+   .readMore{
+    margin-right: 69%;
+   } 
+   .moreInfo2{
+    width: 26%;
+  }
+  .contactUs{
+    width: 26%;
+  }  
+}
+@media screen  and (max-width: 1727px) {
+  .moreInfo {
+    margin-right: 65%;
+   } 
+   .readMore{
+    margin-right: 66%;
+   }
+   .moreInfo2{
+    width: 30%;
+  }
+  .contactUs{
+    width: 30%;
+  }  
+}
+@media screen  and (max-width: 1537px) {
+  .moreInfo {
+    margin-right: 60%;
+   } 
+   .readMore{
+    margin-right: 61%;
+   }
+   .moreInfo2{
+    width: 35%;
+  }
+  .contactUs{
+    width: 35%;
+  }  
+}
+@media screen  and (max-width: 1397px) {
+  .moreInfo {
+    margin-right: 55%;
+   } 
+   .readMore{
+    margin-right: 56%;
+   }
+   .moreInfo2{
+    width: 40%;
+  }
+  .contactUs{
+    width: 40%;
+  }  
+  #diveIn h1{
+    font-size: 50px;
+ }
+}
+@media screen  and (max-width: 1292px) {
+  .moreInfo {
+    margin-right: 50%;
+   } 
+   .readMore{
+    margin-right: 51%;
+   }
+   .moreInfo2{
+    width: 45%;
+  }
+  .contactUs{
+    width: 45%;
+  } 
+  #diveIn h1{
+    font-size: 50px;
+  } 
+}
+@media screen  and (max-width: 1197px) { 
+  .moreInfo {
+    margin-right: 30%;
+   }  
+  .readMore{
+    margin-right: 31%;
+   }
+   .moreInfo2{
+    width: 60%;
+  }
+  .contactUs{
+    width: 60%;
+  } 
+  #diveIn h1{
+    font-size: 40px;
+  } 
+}
+@media screen  and (max-width: 977px) {   
+  .readMore{
+    margin-right: 21%;
+   }
+   .moreInfo2{
+    width: 75%;
+  }
+  .contactUs{
+    width: 75%;
+  } 
+  #diveIn h1{
+    font-size: 30px;
+  } 
+}
+@media screen  and (max-width: 882px) {   
+  .readMore{
+    margin-right: 11%;
+   }
+   .moreInfo2{
+    width: 50%;
+  }
+  .contactUs{
+    width: 50%;
+  } 
+  #diveIn h1{
+    font-size: 40px;
+  } 
+  #diveIn{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  #about{
+    background-color: rgb(221, 243, 252);
+    padding: 5px 0px;
+  }
+  .aboutSection{
+    width: 90%;
+  }
+}
+@media screen  and (max-width: 882px) {   
+  .readMore{
+    margin-right: 7%;
+   }
+   .moreInfo2{
+    width: 100%;
+  }
+  .contactUs{
+    width: 100%;
+  } 
+  #diveIn h1{
+    font-size: 40px;
+  } 
+  #intro img{
+    width: 50%;
+    height: 50%;
+    display: none;
+  }
+  .aboutSection img{
+    width: 40%;
+    display: none;
+  }
+  #navSection{
+    display: inline;
+    text-align: center;
+  }
+  .logo a{
+    font-size:200%;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 120% ;
+  }
+  .eachCustomer{
+    display: inline;
+  }
+  .speCustomer{
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 90%;
+    margin: 10px auto;
+    margin-top: 0px;
+  }
+  .sampleText{
+  margin-bottom: 40px;
+  width: 100%;
+  margin: 50px auto;
+  } 
+ }
