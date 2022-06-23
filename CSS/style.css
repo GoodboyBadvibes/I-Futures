@@ -9,6 +9,10 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+html, body{
+  overflow-x: hidden;
+}
+
 
 /* nav styles */
 
@@ -31,8 +35,8 @@
 }
 .navItems{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 80px;
   list-style: none;
 }
@@ -225,6 +229,9 @@ padding: 50px;
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+.ri-menu-add-fill,.ri-close-circle-line{
+  display: none;
 }
 /* media query */
 @media screen and (max-width: 2407px){
@@ -470,7 +477,7 @@ padding: 50px;
   }
   #navSection{
     /* display: inline; */
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
     gap: 20px;
   }
@@ -510,4 +517,23 @@ padding: 50px;
     padding:20px 60px;
   }
  }
-gi
+ @media screen and (max-width:768px) {
+  .navItems{
+    flex-direction: column;
+    background-color: blue;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    right: -400px;
+    padding: 2rem;
+    transition: .5s;
+    background-color: rgb(31, 31, 97);
+  }
+  .ri-menu-add-fill,.ri-close-circle-line{
+    display: block;
+  }
+  .navItems li{
+    color: white;
+  }
+ }

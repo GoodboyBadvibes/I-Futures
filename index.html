@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Document</title>
 </head>
 <body>
   <!-- Start Of NavSection -->
   <section id="navSection">
-    <div class="logo">
-      <a href="#">Logo..</a>
+    <div class="logo"> 
+      <a href="#">Logo...</a>
     </div>
-
+    <a href="#"><i class="ri-menu-add-fill"></i></a>
     <ul class="navItems">
+     <a href="#">
+      <li><i class="ri-close-circle-line"></i></li>
+     </a>
      <a href="#">
       <li>Home</li>
      </a>
@@ -31,15 +35,15 @@
 
   <!-- Start of Intro Section -->
   <section id="intro">
-    <div class="introText">
+    <div class="introText animate__animated animate__backInDown">
       <h1>IFuture</h1>
       <h2>Award-winning IT company</h2>
       <p>Vitae congue mauris rhoncus aenean vel elit scelerisque. Consequat nisl vel pretium lectus quam id leo in vitae. Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et magnis dis parturient. Molestie ac feugiat sed lectus vestibulum mattis.
       </p>
       <p>Image from <a href="#">Freepik</a></p>
-      <a href="#" style="text-decoration: none;"><p class="moreInfo">LEARN MORE </p> </a>
+      <a href="#" style="text-decoration: none;"><p class="moreInfo ">LEARN MORE </p> </a>
     </div>
-    <img src="/Images/d.jpg" alt="">
+      <img src="/Images/d.jpg" alt="" class="animate__animated animate__backInUp">
   </section>
   <!-- End of Intro Section -->
 
@@ -79,7 +83,7 @@
   <!-- Start of Customers Section -->
   <section id="customerSection">
    <h1>Read what customers say</h1> 
-   <div class="allCustomers">
+   <div class="allCustomers animate__animated animate__flipInY">
     <div class="eachCustomer">
       <div class="speCustomer">
         <h2>Celia Almeda</h2>
@@ -127,5 +131,11 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-s-line"></i></button>
   
   <script src="/sandbox.js/index.js"></script>
+  <script src="/sandbox.js/index2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 </body>
 </html>
